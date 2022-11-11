@@ -1,0 +1,46 @@
+{
+  "name": "vue_3-cli-mobile-template",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vue-cli-service serve",
+    "build:uat": "vue-cli-service build --mode uat",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vensst/js-toolkit": "1.0.5-beta.2",
+    "axios": "^1.1.3",
+    "core-js": "^3.8.3",
+    "echarts": "^5.4.0",
+    "js-cookie": "^3.0.1",
+    "lib-flexible": "^0.3.2",
+    "postcss-pxtorem": "^6.0.0",
+    "vant": "^3.6.5",
+    "vue": "^3.2.13",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.0.3",
+    "vuex": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.16",
+    "@babel/eslint-parser": "^7.12.16",
+    "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-eslint": "~5.0.0",
+    "@vue/cli-plugin-router": "~5.0.0",
+    "@vue/cli-plugin-vuex": "~5.0.0",
+    "@vue/cli-service": "~5.0.0",
+    "compression-webpack-plugin": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.0.3",
+    "less": "^4.0.0",
+    "less-loader": "^8.0.0",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.4.1",
+    "style-resources-loader": "^1.5.0",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "unplugin-vue-components": "^0.22.9",
+    "vconsole": "^3.15.0"
+  }
+}

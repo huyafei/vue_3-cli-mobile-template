@@ -1,0 +1,48 @@
+<!--
+@name: vue_3-cli-mobile-template
+@description：基于vue2.6 + vue-cli5 移动端开发模板
+@date: 2022/10/26 22:16
+@author: vensst、yf_hu
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <!--<meta content="yes" name="apple-mobile-web-app-capable"/>-->
+    <!--<meta content="black" name="apple-mobile-web-app-status-bar-style"/>-->
+    <!--<meta content="telephone=no" name="format-detection"/>-->
+    <!--<meta content="email=no" name="format-detection"/>-->
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- 使用CDN的 CSS 文件 -->
+    <% if (htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.css) {
+    %> <% for(var css of htmlWebpackPlugin.options.cdn.css) { %>
+    <link rel="preload" href="<%= css %>" as="style" />
+    <link rel="stylesheet" href="<%= css %>" />
+    <% } %> <% } %>
+    <!-- 使用CDN的 CSS 文件 end -->
+
+    <!-- 使用CDN加速的 JS 文件 -->
+    <% if (htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.js) {
+    %> <% for(var js of htmlWebpackPlugin.options.cdn.js) { %>
+    <script type="text/javascript" src="<%= js %>"></script>
+    <% } %> <% } %>
+    <!-- 使用CDN加速的 JS 文件 end -->
+  </head>
+  <body>
+    <noscript>
+      <strong
+        >We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong
+      >
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
