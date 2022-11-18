@@ -8,7 +8,7 @@ import asyncRoutes from "./modules/asyncRoutes";
 const routes = [...constantRoutes, ...asyncRoutes];
 
 const router = createRouter({
-  history: createWebHashHistory(), // 或者 createWebHistory()
+  history: createWebHashHistory(process.env.VUE_APP_PROJECT_BASE), // 或者 createWebHistory(process.env.VUE_APP_PROJECT_BASE)
   routes,
 });
 const whiteList = ["Login", "Page404", "Page401"];

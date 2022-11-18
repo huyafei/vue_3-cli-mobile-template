@@ -25,7 +25,6 @@
   </div>
 </template>
 <script>
-import { userLogin } from "@/api";
 
 export default {
   name: "Login",

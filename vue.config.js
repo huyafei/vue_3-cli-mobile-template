@@ -10,8 +10,8 @@ const isProduction = process.env.NODE_ENV === "production";
 const resolve = (dir) => path.resolve(__dirname, dir);
 
 // vant 按需加载使用
-const { VantResolver } = require("unplugin-vue-components/resolvers");
-const ComponentsPlugin = require("unplugin-vue-components/webpack");
+const { VantResolver } = require('unplugin-vue-components/resolvers');
+const ComponentsPlugin = require('unplugin-vue-components/webpack');
 
 // 样式和js的CDN外链，会插入到index.html中
 const cdn = {
@@ -169,7 +169,8 @@ module.exports = defineConfig({
       args[0].cdn = cdn;
       return args;
     });
-
+    // 去除 vue-i18n 在控制台的警告 You are running the esm-bundler build of vue-i18n. It is recommended to configure your bundler to explicitly replace feature flag globals with boolean literals to get proper tree-shaking in the final bundle.
+    config.resolve.alias.set('vue-i18n', 'vue-i18n/dist/vue-i18n.cjs.js')
     if (isProduction) {
       // 为生产环境修改配置...
       // 打包优化，去除console.log

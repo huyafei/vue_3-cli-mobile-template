@@ -1,12 +1,11 @@
 <script setup>
 import { computed, onMounted, watch } from "vue";
-import { useRouter, useRoute } from 'vue-router'
-import { useStore } from 'vuex'
+import { useRouter, useRoute } from "vue-router";
+import { useStore } from "vuex";
 
 const store = useStore();
 const router = useRouter();
 const route = useRoute();
-
 
 const cachedViews = computed(() => store.state.router.cachedViews);
 const key = computed(() => route.path);
@@ -21,20 +20,19 @@ watch(
 const addCachedViews = function () {
   const { name } = route;
   if (name) {
-    store.dispatch('router/addCachedViews',route);
+    store.dispatch("router/addCachedViews", route);
   }
 };
 onMounted(() => {
   addCachedViews();
 });
-
 </script>
 <template>
   <div class="layout">
     <div class="main">
-      <router-view v-slot="{ Component }" >
+      <router-view v-slot="{ Component }">
         <keep-alive :include="cachedViews">
-          <component :is="Component" :key="key"/>
+          <component :is="Component" :key="key" />
         </keep-alive>
       </router-view>
     </div>

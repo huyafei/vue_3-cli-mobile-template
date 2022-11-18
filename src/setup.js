@@ -13,6 +13,7 @@ import "lib-flexible";
 
 import "./assets/styles/css/main.css";
 import "./assets/styles/less/index.less";
+
 // 引入组件
 import("./components").then((e) => e.default(app));
 // 加载插件

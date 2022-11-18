@@ -16,6 +16,8 @@ export default {
       isRouterAlive: true,
     };
   },
+  setup() {},
+  mounted() {},
   methods: {
     reload() {
       this.isRouterAlive = false;
@@ -24,8 +26,6 @@ export default {
       });
     },
   },
-  mounted() {},
 };
 </script>
-<style lang="less">
-</style>
+<style lang="less"></style>

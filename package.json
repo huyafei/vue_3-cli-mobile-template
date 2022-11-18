@@ -1,6 +1,7 @@
 {
   "name": "vue_3-cli-mobile-template",
   "version": "0.0.0",
+  "license": "MIT",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build:uat": "vue-cli-service build --mode uat",

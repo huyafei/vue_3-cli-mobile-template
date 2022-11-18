@@ -1,32 +1,32 @@
 /**
  * @name: vant
- * @description：vant.js
+ * @description: vant.js
  * @date: 2022/10/20 9:57
  * @author: yf_hu
  */
 
 import {
   Locale,
-  Button,
-  Field,
-  Form,
-  Icon,
-  Cell,
-  CellGroup,
-  Tabbar,
-  TabbarItem,
-  NavBar,
-  RadioGroup,
-  Radio,
-  Picker,
-  Popup,
+  // Button,
+  // Field,
+  // Form,
+  // Icon,
+  // Cell,
+  // CellGroup,
+  // Tabbar,
+  // TabbarItem,
+  // NavBar,
+  // RadioGroup,
+  // Radio,
+  // Picker,
+  // Popup,
 } from "vant";
 import { getLanguage, messages } from "@/lang";
 
 const language = getLanguage();
 Locale.use(language, messages[language]);
 
-export default function (app) {
+// export default function (app) {
   // app.use(Button);
   // app.use(Field);
   // app.use(Form);
@@ -40,4 +40,4 @@ export default function (app) {
   // app.use(Radio);
   // app.use(Picker);
   // app.use(Popup);
-}
+// }

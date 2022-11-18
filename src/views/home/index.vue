@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: "Home"
+  name: "Home",
 };
 </script>
 <script setup>
@@ -13,26 +13,25 @@ const store = useStore();
 const { num1, num2, value, plus, multiply, minus, divide } = useCalculate();
 
 const _data = reactive({
-  userInfo: store.state.user.userInfo
+  userInfo: store.state.user.userInfo,
 });
 const option = reactive({
   xAxis: {
     type: "category",
-    data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+    data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
   },
   yAxis: {
-    type: "value"
+    type: "value",
   },
   series: [
     {
       data: [820, 932, 901, 934, 1290, 1330, 1320],
-      type: "line"
-    }
-  ]
+      type: "line",
+    },
+  ],
 });
 
-onMounted(() => {
-});
+onMounted(() => {});
 </script>
 <template>
   <div class="main-content page">
@@ -59,7 +58,7 @@ onMounted(() => {
       <van-button @click="minus">减</van-button>
       <van-button @click="multiply">乘</van-button>
       <van-button @click="divide">除</van-button>
-      <img :src="`/static/tx.jpg`" style="width: 60px">
+      <img :src="`/static/tx.jpg`" style="width: 60px" />
     </div>
   </div>
 </template>

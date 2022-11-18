@@ -9,12 +9,16 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
 ```
-npm build
+// 生产测试环境
+npm run build:uat
+
+// 生产正式环境
+npm run build
 ```
 
 ### Lints and fixes files

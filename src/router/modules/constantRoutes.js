@@ -1,6 +1,6 @@
 /**
  * @name: constant
- * @description：constant.js
+ * @description: constant.js
  * @date: 2022/1/6 13:19
  * @author: yf_hu
  */
@@ -21,7 +21,9 @@ const constantRoutes = [
       title: "提示",
     },
     component: () =>
-      import(/* webpackChunkName: "pageError" */ "../../views/pageError/404.vue"),
+      import(
+        /* webpackChunkName: "pageError" */ "../../views/pageError/404.vue"
+      ),
   },
   {
     path: "/401",
