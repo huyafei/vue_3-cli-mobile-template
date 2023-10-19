@@ -4,8 +4,8 @@
  * @date: 2022/10/28 15:08
  * @author: yf_hu
  */
-import * as jstk from "@vensst/js-toolkit";
+import jsToolkit from "@vensst/js-toolkit";
 
-jstk.VUE_PLUGIN_NAME = '$jstk'
+jsToolkit.VUE_PLUGIN_NAME = "$jsToolkit";
 
-export default jstk
+export default jsToolkit;

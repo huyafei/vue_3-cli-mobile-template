@@ -6,5 +6,5 @@
  */
 import * as echarts from "echarts";
 
-echarts.VUE_PLUGIN_NAME = '$echarts'
-export default echarts
+echarts.VUE_PLUGIN_NAME = "$echarts";
+export default echarts;

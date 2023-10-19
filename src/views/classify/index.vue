@@ -29,9 +29,9 @@ export default {
   //keep-alive 组件停用时调用。
   deactivated() {},
   //销毁之前
-  beforeDestroy() {},
+  beforeUnmount() {},
   //销毁后
-  destroyed() {},
+  unmounted() {},
   methods: {},
 };
 </script>

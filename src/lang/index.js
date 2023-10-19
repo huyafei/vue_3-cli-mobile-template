@@ -4,7 +4,7 @@
  * @date: 2022/1/20 14:19
  * @author: yf_hu
  */
-import {createI18n} from 'vue-i18n'
+import { createI18n } from "vue-i18n";
 import cookies from "@plugins/modules/cookies";
 
 import enUS from "vant/es/locale/lang/en-US";
@@ -38,7 +38,7 @@ export const getLanguage = () => {
 };
 export const i18n = createI18n({
   locale: getLanguage(),
-  fallbackLocale: 'zh-CN',
+  fallbackLocale: "zh-CN",
   globalInjection: true,
   legacy: false,
   messages,
